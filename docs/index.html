@@ -34,6 +34,7 @@
         <div><dt>K / D / A</dt><dd class="num">6 / 1 / 13</dd></div>
         <div><dt>參團率</dt><dd class="num">73%</dd></div>
         <div><dt>評分</dt><dd><span class="num">10.2</span><small>隊上第 2</small></dd></div>
+        <div><dt>模擬考</dt><dd><span class="num">5A</span><small>5⁺～9⁺・目標雄中</small></dd></div>
       </dl>
     </div>
   </header>
@@ -227,10 +228,76 @@
         <p>如果每週玩 20 小時（含聊天），<b>一年大約 1,000 小時</b>。這差不多是你一整年在學校上課的總時數（每週約 25 小時 × 40 週）。</p>
       </div>
       <div>
-        <p class="ledger-num num">≈ 35 週</p>
-        <p>離明年 5 月的會考大約還有 35 週（以 5 月中旬估算）。<b>每週省下 5 小時，會考前就多出 175 小時</b>，平均每天多 45 分鐘。</p>
+        <p class="ledger-num num">≈ <span id="weeks-left">35</span> 週</p>
+        <p>離會考（2027 年 5 月 15、16 日）大約還有 <span id="weeks-left-2">35</span> 週。<b>每週省下 5 小時，會考前就多出 <span id="hours-5">175</span> 小時</b>，平均每天多 45 分鐘。</p>
       </div>
     </div>
+  </section>
+
+  <!-- Target school -->
+  <section id="target">
+    <p class="eyebrow">目標雄中</p>
+    <h2>你離雄中有多遠？</h2>
+    <p class="intro">先講好消息：<b>你已經在射程內了。</b>下面用高雄區免試入學的「積點」來看你的位置。</p>
+
+    <div class="figure">
+      <h3 class="row-title">會考積點<small>每科 A++ 7 點、A+ 6 點、A 5 點，五科加總</small></h3>
+      <div class="scale" aria-label="積點位置圖：雄中近兩年最低錄取 29 點，你的模擬考 30 到 34 點">
+        <div class="scale-track">
+          <div class="scale-you" style="left:50%;width:40%"><span>你的模擬考 30～34 點</span></div>
+          <div class="scale-mark" style="left:40%"><span>雄中最低錄取<br><b class="num">29</b> 點</span></div>
+          <div class="scale-mark safe" style="left:50%"><span>預估穩上<br><b class="num">30</b> 點</span></div>
+        </div>
+        <div class="scale-ticks" id="scale-ticks"></div>
+      </div>
+      <p class="note">雄中最低錄取：114、115 學年度都是會考 5A（30 分）、積點 29 點，也就是 5A4⁺。「預估穩上」是 115 年高雄國中校長依成績分布做的推估。模擬考和會考難度不同，數字僅供參考。</p>
+    </div>
+
+    <div class="cards three">
+      <article class="card">
+        <p class="tag">你的位置</p>
+        <h3>比門檻高 1～5 點</h3>
+        <p>模擬考 5A5⁺～5A9⁺ 等於積點 30～34，已經高過近兩年雄中最低錄取的 29 點。</p>
+      </article>
+      <article class="card warn">
+        <p class="tag">真正的風險</p>
+        <h3>任何一科掉到 B</h3>
+        <p>只要一科 B++，就變成 4A1B，雄中基本上就沒機會了。所以這學期的主線是<b>「穩」</b>，不是「衝」。</p>
+      </article>
+      <article class="card">
+        <p class="tag">主線任務</p>
+        <h3>國文要穩在 A+</h3>
+        <p>國文是你最可能失手的一科，專家也說「國文 A+ 最穩」。作文則是同分時最後的決勝項目。</p>
+      </article>
+    </div>
+
+    <details class="method">
+      <summary>高雄區免試入學怎麼算分？</summary>
+      <ul>
+        <li><b>總分 100 分</b> = 志願序 30 分（雄中填第一志願就是滿分）＋ 比序項目 40 分 ＋ 會考 30 分（每科 A 得 6 分）。</li>
+        <li><b>同分時依序比</b>：比序項目 → 志願序 → 會考積分 → 會考積點 → 單科 → 寫作測驗（作文）。</li>
+        <li><b>比序項目</b>包括均衡學習、服務學習、體適能、競賽、獎勵、幹部。<b>這 40 分會考考再好也補不回來</b>，記得跟導師或輔導室確認自己是不是已經拿滿。</li>
+      </ul>
+    </details>
+  </section>
+
+  <!-- Chinese main quest -->
+  <section id="chinese">
+    <p class="eyebrow">主線任務</p>
+    <h2>國文，用練連招的方法練</h2>
+    <p class="intro">你在訓練營對木樁練連招、看傷害數據一次次修正。國文用同一套：<b>錯題就是木樁，模擬考成績就是傷害統計。</b>會考國文主要考閱讀理解，包括長文、圖表和文言文。</p>
+    <div class="table-wrap">
+      <table class="quest">
+        <thead><tr><th>練什麼</th><th>什麼時候</th><th>怎麼練</th></tr></thead>
+        <tbody>
+          <tr><td>閱讀題組</td><td>週四、五、日各 1 小時</td><td>每次 2～3 組，每題錯誤都寫下「為什麼選錯」</td></tr>
+          <tr><td>文言文</td><td>週一～三睡前 15 分鐘</td><td>一天一篇短文，只看註釋、抓大意</td></tr>
+          <tr><td>作文</td><td>每週六 1 篇</td><td>限時 50 分鐘（跟會考一樣），請老師批改，目標 5～6 級分</td></tr>
+          <tr><td>錯題本</td><td>每週日</td><td>把這週的錯題重新做一次，做對才算過關</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="kicker">每次模擬考後，把各科等級和積點記下來，像看戰績一樣追蹤。國文穩在 A+，你就站在雄中的安全區。</p>
   </section>
 
   <!-- Builds -->
@@ -311,39 +378,79 @@
   <!-- Planner -->
   <section id="plan">
     <p class="eyebrow">自訂</p>
-    <h2>配你自己的裝</h2>
-    <p class="intro">這是你的時間，怎麼配由你決定。拉拉看，找出你覺得最划算的那一套。</p>
+    <h2>排你自己的一週</h2>
+    <p class="intro">下面是一份建議版的國三作息，已經把你的補習排進去了（週一～三補到 21:30、週六日 9:00～12:00）。<b>點任何一天，就能改那天的讀書、運動、遊戲和睡覺時間。</b>改好的版本會存在你自己的瀏覽器裡。</p>
 
     <div class="planner figure">
       <div class="controls four">
         <div class="control">
-          <label for="p-off"><span>平日幾點放下手機</span></label>
-          <select id="p-off"></select>
+          <label for="p-wake-wd"><span>平日起床</span></label>
+          <select id="p-wake-wd"></select>
         </div>
         <div class="control">
-          <label for="p-wake"><span>幾點起床</span></label>
-          <select id="p-wake"></select>
+          <label for="p-wake-we"><span>週末起床</span></label>
+          <select id="p-wake-we"></select>
         </div>
         <div class="control">
-          <label for="p-wd"><span>平日每天玩</span><output id="p-wd-out" for="p-wd">1 小時</output></label>
-          <input type="range" id="p-wd" min="0" max="4" step="0.5" value="1">
+          <label for="p-cram"><span>週一～三補習開始</span></label>
+          <select id="p-cram"></select>
         </div>
         <div class="control">
-          <label for="p-we"><span>週末每天玩</span><output id="p-we-out" for="p-we">3 小時</output></label>
-          <input type="range" id="p-we" min="0" max="8" step="0.5" value="3">
+          <span class="control-label">改亂了？</span>
+          <button type="button" class="ghost" id="p-reset">恢復建議版</button>
         </div>
       </div>
 
+      <ul class="legend" aria-label="圖例">
+        <li><i class="sw school"></i>學校</li>
+        <li><i class="sw cram"></i>補習</li>
+        <li><i class="sw study"></i>讀書</li>
+        <li><i class="sw ex"></i>運動</li>
+        <li><i class="sw game"></i>遊戲</li>
+        <li><i class="sw sleep"></i>睡覺</li>
+      </ul>
+
+      <div class="week-wrap">
+        <div class="week" id="week"></div>
+      </div>
+
+      <div class="day-editor">
+        <h3 id="ed-title">週四怎麼排</h3>
+        <div class="ed-grid">
+          <fieldset class="ed-item">
+            <legend><i class="sw study"></i>讀書</legend>
+            <label>開始 <select id="ed-study-s"></select></label>
+            <label>時數 <output id="ed-study-h-out">2 小時</output><input type="range" id="ed-study-h" min="0" max="5" step="0.25"></label>
+          </fieldset>
+          <fieldset class="ed-item">
+            <legend><i class="sw ex"></i>運動</legend>
+            <label>開始 <select id="ed-ex-s"></select></label>
+            <label>時數 <output id="ed-ex-h-out">0 小時</output><input type="range" id="ed-ex-h" min="0" max="3" step="0.25"></label>
+          </fieldset>
+          <fieldset class="ed-item">
+            <legend><i class="sw game"></i>遊戲</legend>
+            <label>開始 <select id="ed-game-s"></select></label>
+            <label>時數 <output id="ed-game-h-out">1.25 小時</output><input type="range" id="ed-game-h" min="0" max="5" step="0.25"></label>
+          </fieldset>
+          <fieldset class="ed-item">
+            <legend><i class="sw sleep"></i>睡覺</legend>
+            <label>幾點睡著 <select id="ed-bed"></select></label>
+            <p class="ed-sleep" id="ed-sleep">這晚睡 8 小時</p>
+          </fieldset>
+        </div>
+        <ul class="warnings" id="ed-warn" aria-live="polite"></ul>
+      </div>
+
       <div class="plan-out">
-        <div class="tile"><p class="t-label">每週遊戲</p><p class="t-val"><span class="num" id="o-week">13.5</span> 小時</p><p class="t-sub" id="o-week-sub">比現在少約 6.5 小時</p></div>
-        <div class="tile"><p class="t-label">平日每晚睡眠</p><p class="t-val"><span class="num" id="o-sleep">7.5</span> 小時</p><p class="t-sub" id="o-sleep-sub">目標 8 小時以上</p></div>
-        <div class="tile"><p class="t-label">會考前多出</p><p class="t-val"><span class="num" id="o-gain">228</span> 小時</p><p class="t-sub">以約 35 週計算</p></div>
+        <div class="tile"><p class="t-label">每週遊戲</p><p class="t-val"><span class="num" id="o-game">7</span> 小時</p><p class="t-sub" id="o-game-sub"></p></div>
+        <div class="tile"><p class="t-label">每週自主讀書</p><p class="t-val"><span class="num" id="o-study">10</span> 小時</p><p class="t-sub" id="o-study-sub"></p></div>
+        <div class="tile"><p class="t-label">平均每晚睡眠</p><p class="t-val"><span class="num" id="o-sleep">8</span> 小時</p><p class="t-sub" id="o-sleep-sub"></p></div>
         <div class="tile verdict"><p class="t-label">你的出裝</p><p class="t-val" id="o-build">節奏流</p><p class="t-sub" id="o-build-sub"></p></div>
       </div>
 
       <div class="line-card">
-        <p class="t-label">給朋友的下線台詞</p>
-        <p class="line" id="o-line">我 22:35 開最後一場，打完就下線，明天見！</p>
+        <p class="t-label" id="o-line-label">這天給朋友的下線台詞</p>
+        <p class="line" id="o-line">我 21:20 開最後一場，打完就下線，明天見！</p>
         <div class="line-actions">
           <button type="button" id="copy-line">複製台詞</button>
           <span class="copied" id="copied" role="status" hidden>已複製</span>
@@ -352,7 +459,20 @@
       </div>
     </div>
 
-    <p class="closing">最後怎麼配都是你的決定。我們只希望，你選的是自己看過數據之後，覺得最划算的那一套。</p>
+    <h3 class="sub-h">到會考前的節奏</h3>
+    <div class="table-wrap">
+      <table class="phases">
+        <thead><tr><th>時期</th><th>重點</th><th>每週遊戲</th></tr></thead>
+        <tbody>
+          <tr><td>9 月～12 月</td><td>總複習第一輪、國文打底、作文每週一篇</td><td>約 7 小時</td></tr>
+          <tr><td>寒假（1～2 月）</td><td>每週一次完整模擬考、補弱科</td><td>約 7～8 小時，一樣照固定時段</td></tr>
+          <tr><td>3 月～4 月</td><td>歷屆試題限時練習、模擬考檢討</td><td>約 4～5 小時，只留週末</td></tr>
+          <tr><td>5 月前兩週</td><td>作息調成跟考試當天一樣、只看錯題本、睡飽</td><td>週末 1～2 局紓壓，不用完全不玩</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="closing">最後怎麼排都是你的決定。我們只希望，你選的是自己看過數據之後，覺得最划算、也最能讓你考上雄中的那一套。</p>
   </section>
 
   <footer class="sources">
@@ -363,6 +483,9 @@
       <li><a href="https://tomchun.tw/tomchun/2026/01/08/arena-of-valor-aov-rank-inheritance-table/" target="_blank" rel="noopener">湯姆群情報站：2026 排位賽季段位繼承表（社群整理）</a></li>
       <li><a href="https://zh.wikipedia.org/zh-tw/GCS%E8%81%B7%E6%A5%AD%E8%81%AF%E8%B3%BD" target="_blank" rel="noopener">維基百科：GCS 職業聯賽</a>、<a href="https://esports.moba.garena.tw/gcs/news/content/4578" target="_blank" rel="noopener">2024 GCS 春季聯賽參賽隊伍</a></li>
       <li><a href="https://www.cdc.gov/sleep/about/index.html" target="_blank" rel="noopener">美國 CDC：各年齡建議睡眠時數</a></li>
+      <li><a href="https://udn.com/news/story/6898/9612648" target="_blank" rel="noopener">聯合新聞網：115 學年度高雄區免試放榜，雄中守住 5A</a>、<a href="https://udn.com/news/story/6898/9547958" target="_blank" rel="noopener">會考落點分析：雄中 5A30 點、國文 A+ 最穩</a></li>
+      <li><a href="https://www.tkbgo.com.tw/schoolZone/university/article/toDetail?article_id=1921" target="_blank" rel="noopener">TKB：高雄區免試入學積分規則與歷年門檻</a>、<a href="https://www.6-one.com.tw/kaohsiung-senior-high-admission-guide/" target="_blank" rel="noopener">高雄國中升高中指南（同分比序順序）</a></li>
+      <li><a href="https://www.cssh.ntpc.edu.tw/p/406-1000-17798,r72.php" target="_blank" rel="noopener">116 年國中教育會考日期公告</a></li>
       <li>對局時長與戰績：你分享的三場戰績與回放</li>
     </ul>
     <p class="fine">頁面上的時數、週數多為估算，歡迎用你自己的戰績頁和螢幕使用時間修正。本頁不含任何遊戲 ID 或 UID。</p>
