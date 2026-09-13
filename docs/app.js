@@ -82,14 +82,6 @@ function renderClimb() {
     .join("");
 
   const h0 = rows[0].hours;
-  $("cpv").innerHTML = rows
-    .map((r) => {
-      const ratio = h0 / r.hours;
-      return `<div class="glyphcell">${heartSvg(Math.max(30 * Math.sqrt(ratio), 5))}
-        <span class="cap"><b>${Math.round(ratio * 100)}%</b></span></div>`;
-    })
-    .join("");
-
   const next = rows[1];
   $("cp-headline").innerHTML =
     `從 10 星爬到 20 星，大約要 <b>${next.games} 場、${Math.round(next.hours)} 小時</b>` +
